@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+require('dotenv').config()
 
 const App = () => {
   const [displayText, setDisplayText] = useState('');
@@ -52,7 +53,8 @@ const App = () => {
   let Minutes = new Date().getMinutes();
   let Seconds = new Date().getSeconds();
   currentTime = currentTime.toLocaleString()
-  let displaytext="poihashfdsaht5764874hsuh%*(75)*&%96%(^toyYG777FttRO&*t87t7tyimcuck875875sduhyg"
+  let displaytext;
+  display=process.env.TEXT;
   return (
     <div>
     <div>
