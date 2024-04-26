@@ -32,7 +32,7 @@ const App = () => {
       } else {
         const nextStartTime = (currentDay >= 1 && currentDay <= 5) ? 18 : 9; // Monday to Friday: 6pm, Saturday and Sunday: 9am
         nextChangeInSeconds = ((nextStartTime * 3600) - currentTimeInSeconds) + (currentDay === 0 ? (6 * 3600) : 0); // Add Sunday midnight offset
-        setDisplayText('LGFJK(087)(60^)(607-9gJKguhgjghgjgkjhlkjgoiug08)(&^0986986-9bhkhpjh');
+       
       }
 
       const hoursRemaining = Math.floor(nextChangeInSeconds / 3600);
